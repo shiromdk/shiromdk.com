@@ -79,7 +79,7 @@ module.exports = {
   externals: {
     // global app config object
     config: JSON.stringify({
-      apiUrl: 'http://localhost:8089',
+      apiUrl: 'https://api.shiromdk.com',
     }),
   },
 }
