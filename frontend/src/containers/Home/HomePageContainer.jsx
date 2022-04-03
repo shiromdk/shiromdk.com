@@ -17,9 +17,9 @@ const HomePageContainer = () => {
   const [modal, setModal] = useState(false);
 
   useEffect(() => {
-    listActions.getLists().then((res) => {
-      setListData([...res]);
-    });
+    // listActions.getLists().then((res) => {
+    //   setListData([...res]);
+    // });
   }, []);
 
   return (
