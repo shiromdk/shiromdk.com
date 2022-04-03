@@ -9,9 +9,9 @@ import {
 import { NoteAdd } from "@mui/icons-material";
 
 import { listActions } from "../../action";
-import { Typography } from "@mui/material";
+import ListComponent from "../../components/Home/ListComponent";
 
-const HomePageContainer = () => {
+const NotePageContainer = () => {
   
   const [listData, setListData] = useState([]);
   const [modal, setModal] = useState(false);
@@ -25,7 +25,7 @@ const HomePageContainer = () => {
   return (
     <div>
       <Container>
-          <Typography  variant="h1" component="h1">WIP</Typography>
+        <ListComponent data={listData} />
       </Container>
       <Paper
         sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
@@ -40,4 +40,4 @@ const HomePageContainer = () => {
   );
 };
 
-export default HomePageContainer;
+export default NotePageContainer;
